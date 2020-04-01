@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+//Вариант 10
+//Реализовать функцию возведения в квадрат суммы двух целых чисел
+//Выполнил ст.группы АТ-192
+//Кострица А.И.
+
+namespace labatory1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Реализация функции возведения в квадрат суммы двух целых чисел");
+            int b, a, с;
+            Console.WriteLine("Введите первое целое число:");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите второе целое число:");
+            b = Convert.ToInt32(Console.ReadLine());
+            с = (a*a) + (2*a*b) + (b*b);
+            Console.WriteLine("Квадрат суммы двух целых чисел = " + с);
+        }
+    }
+}
